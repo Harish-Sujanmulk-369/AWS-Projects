@@ -110,6 +110,24 @@ We have to follow 15 steps following below. Let's start
 - So, we are provided the internet to subnet-3 with the help of NAT.G and R.T .
 
 
+# Step - 2:
+
+**SNS(Simple Notification Services)**
+
+- We have to create SNS.
+- Go to the SNS create topic
+- Create subscription click on E-mail.
+- That's it.
+- Goto E-mail and accept & Enable it.
+
+![13](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/2010b22e-5ba2-4191-8e16-1deabb2b6d2b)
+
+
+
+
+
+
+
    
 
 
