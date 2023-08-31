@@ -76,6 +76,24 @@ We have to follow 15 steps following below. Let's start
 - Even though, we should create another R.T for our own.
 - Give the name to new R.T and select existence  VPC  then click on create R.T .
 - Now, our own R.T is ready.
+
+![9](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/aa6351a0-9368-4163-a524-e448118cc0f6)
+
+![1](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/7ad1c03b-dc82-423d-9a6b-0401ede69186)
+
+- Follow the above diagram.
+- Inside our R.T , goto edit subnet associations.Go through first two public subnets click on them.
+- Another side, we should connect to I.G .Then gothrough the routes inside the R.T.   Edit routes manually we should do this.
+- So, our target is I.G click on it.
+- Moreover, we should provide internet right,then click on 0.0.0.0/0 for providing the internet.
+- Save changes.
+
+![10](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/687aa72d-7552-47e6-99be-cc0274ddbd55)
+
+![11](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/24105d53-d00c-40e6-89ad-edd6d09e7e76)
+
+
+
   
 
 
