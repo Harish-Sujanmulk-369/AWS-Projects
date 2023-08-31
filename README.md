@@ -15,7 +15,7 @@ Worked on Elastic Compute Cloud (EC2), Elastic Load Balancer (ELB), Auto Scaling
 
 We have to follow 15 steps following below. Let's start
 
-**Step 1 :**
+# Step 1 :
 
 **a. VPC Creation:**
 
@@ -121,6 +121,152 @@ We have to follow 15 steps following below. Let's start
 - Goto E-mail and accept & Enable it.
 
 ![13](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/2010b22e-5ba2-4191-8e16-1deabb2b6d2b)
+
+
+# Step - 3:
+
+**S3(Simple Storage Service)**
+
+- Create S3 [3 Buckets]
+- It is for VPC Flow Logs.
+- Object ownership -Click on ACL's Enable and uncheck on block all public access and acknowledge.
+- Create bucket.
+- Create another two buckets named as
+  1) First
+  2) Second
+- Process is same.
+
+![14](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/8f46fb39-255b-4f2b-8b05-435b1814c52a)
+
+
+# Step - 4:
+
+**IAM(Identified Access Management)**
+
+- Goto role and click on create roles.Source is EC2 and next.
+- Search S3 Full access and click it.
+- Give the role name and click on next.
+- Now IAM is ready.
+
+![15](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/56aadadc-65bd-41fc-89fb-e195e56921c5)
+
+
+# Step - 5:
+
+**EFS(Elastic File System)**
+
+- Create EFS and give the name click on existence VPC and click on create.
+- There is a small Problem is there.
+- So, we need to solve that problem.
+- So,go through the VPC section we shpuld select our VPC and edit hostname option which is appear left corner.
+- we have to enable it.
+- Then only it can be work.
+- That's it.
+
+![16](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/a7a67234-6184-4773-afa0-4c164bdb65d6)
+
+![17](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/5b3bd211-f3d6-4180-8105-31e03af7b096)
+
+
+# Step - 6:
+
+**Security Group(S.G)**
+
+- Goto EC2 Section select the S.G.
+- Create one new S.G.
+- Give the name and attach our existence VPC.
+- Goto edit outbound - first is all traffic. If anything is there just delete.
+- Goto edit Inbound SSH to Myip & HTTP to all.
+- Then click on craete.
+- That's it.
+
+![18](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/1cad6cc8-56a9-495e-acb9-e2965cc32b03)
+
+
+# Step - 7:
+
+**VPC Flow Log**
+
+- Create VPC Flow Log [ It takes some time to enable,so that's why end of the creations.It will be ready]
+- Go to the VPC . click on action and you can see create VPC Flow Log . Click it.
+- Name it, send it to S3 bucket.
+- Name S3 ARN bucket name.
+- Then, goto the S3 .copy the ARN which you want to make it.
+- Create Flow Log.
+
+  # Step - 8:
+
+  **Elastic Load Balancer(ELB)**
+
+  - Create Clasic Load Balncer.
+  - (If we have 0-100 servers then go with this).
+  - Give any name and attach our VPC.
+  - we want to connect our instances which is in public subnet. Then go through the first,second subnets-next.
+  - Click on both default and our S.G.
+  - (Why because, EFS is related to default one).
+  - Health checks is same(2,5,2,2).
+  - As of now we don't have any instances .Review & Create.
+ 
+![19](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/807cc807-7a15-4b61-b203-dc0487ac0b02)
+
+
+# Step - 9:
+
+**Launch Template(L.T)**
+
+- (Before going to the Autoscaling we need to craete the launch template.It is EC2)
+- Give the name, Version(1),Provide guidlines.
+- AMI, instances type(CPU,RAM)[Free tier].
+- New Key Pair.
+- Existence S.G [Both default, our S.G].
+- EBS Volumes same[You can change 8 to 9].
+- Advance,IAM role(Existence IAM role select).
+- At teh end we need to install web packages
+  #!/bin/bash
+  sudo su -
+  yum update -y
+  mkdir /sai
+  Goto EFS Select our EFS click on attach and copy and paste it here and write as /sai.
+  yum install httpd -y
+  echo "Mywebpage" > index.html
+  service httpd start
+  chkconfig httpd on
+- Then create.
+
+
+# Step - 10:
+
+**AutoScaling**
+
+- Click on AutoScaling.
+- Give the name and select our launch template.
+- next,click on our VPC and public subnet availability zone.
+- next, Attach to existing load Balancer.
+- Choose Classic Load Balancer,click on our Load Balnacer.
+- Check on ELB and 150 seconds,next.
+- Groupsize: desire(4),min(4),max(10).
+- Target tracking click and target value(90),take a break 300 seconds,next
+- SNS add it which we attached earlier when we are creating the launch template.
+- next,Tags(Name-webserver).
+- create AutoScaling.
+- Goto the loadbalancer copy the DNS name & paste it in browser (or) just copy any one of EC2 instance IP address and paste it on browser.It also works.
+
+![20](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/224dd430-e399-45bb-9609-91c73a072307)
+
+![21](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/89cbbfff-6c8e-4297-96d5-b4af28f29fba)
+
+![22](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/362b31d6-1573-4c56-be00-8df35507d138)
+
+![23](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/8223b751-e810-4aad-aefb-705ca7d7646b)
+
+
+
+**Note:**
+As of now we created normal servers,which we have seen the results also .
+But,further we can maove on to the bastion servers.And that is connected to third subnet.
+
+  
+
 
 
 
