@@ -34,6 +34,17 @@ We have to follow 15 steps following below. Let's start
 - In this project we need three subnets.Go to the subnet section and create.
 - Fisrt take the subnets one by one.
 - After that, attach existence VPC which we have create earlier.
+- Give the names for every three subnets.
+- Give availability zones for three subnets.
+- And also give ipV4 CIDR blocks for each subnet as
+- 1) 10.0.1.0/24
+  2) 10.0.2.0/24
+  3) 10.0.3.0/24
+- Click on create subnet.
+- Then out of three subnets we need to make two subnets as public.
+- Let's do it, Click on subnet whicch we want to make subnets as public.
+- Goto edit subnet and the "enable auto-assign public ipV4 address".
+- Then click on save button.
 
 ![3](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/db24ccde-6fab-4c71-8540-4ec7edeb5b84)
 
@@ -42,4 +53,6 @@ We have to follow 15 steps following below. Let's start
 ![5](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/46be75d7-35a0-4495-8f93-b55b5c9defe5)
 
 ![6](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/4fca6ebb-8ee9-454b-a22f-2c02651e9a61)
+
+
 
