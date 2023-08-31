@@ -92,6 +92,26 @@ We have to follow 15 steps following below. Let's start
 
 ![11](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/24105d53-d00c-40e6-89ad-edd6d09e7e76)
 
+**e. NAT- Gateway(NAT.G)**
+
+- I.G & NAT.G allows the internet.
+- Create the NAT.G
+- Goto the R.T, we know one R.T is there which is created when we are creating the VPC.
+- Just go through and change the name as "NatRT".
+- And see the picture and connection of NAT.G .
+
+![12](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/b896bb75-1cb3-410d-ad99-513856b73728)
+
+![2](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/4b800a3d-e797-4c97-89df-9b65514e374b)
+
+- Follow the above diagram.
+- Now,inside the "NatRT". Go to the subnet permission click on third subnet and save.
+- At the same, we should connect NAT.G  also, so, goto the route option inside the "NatRT". Click on NAT.G and provide internet.
+- So, we are provided the internet to subnet-3 with the help of NAT.G and R.T .
+
+
+   
+
 
 
   
