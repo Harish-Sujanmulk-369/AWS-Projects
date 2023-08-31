@@ -268,6 +268,156 @@ We have to follow 15 steps following below. Let's start
 As of now we created normal servers,which we have seen the results also .
 But,further we can maove on to the bastion servers.And that is connected to third subnet.
 
+
+# Step - 11:
+
+
+**Bastion Server**
+
+- Same goto EC2 section.
+- Create instance and name it as bastion server.
+- AMI, Instance types,select existing key pairs.
+- Edit network & Security groups.
+  1) Select our VPC.
+  2) select first public subnet.Because, the bastion server launches in first public subnet.
+  3) create new security group and name it.Because, we need to give the access for ourself.so,that's why select only SSH Port myself
+- you can create another bastion server same as above.
+- But, we need to select existing key pair,VPC,S.G and that too second bastion server.
+
+![24](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/ddfb6aa0-4468-4394-b930-a0c7d7847667)
+
+
+# Step 12:
+
+
+**DB Server**
+
+- Same as EC2 Section.
+- Create EC2 Instance name it as DBServer.
+- AMI,Instance type,Select existing key pair.
+- Edit network & Security groups.
+  1) Select our VPC.
+  2) Select third private subnet. Because, it is related to the third private subnet.
+  3) Create new security Group & name it.
+- DB
+  1) Bastion server1(IP PRIVATE SSH PORT)
+  2) Bastion server2(IP PRIVATE SSH PORT)
+- MYSQL
+  1) First Public Subnet(IP ADDRESS(10.0.1.0/24))
+  2) Second Public Subnet(IP ADDRESS(10.0.2.0/24))
+
+
+![25](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/68a3b45a-9bfd-4edb-b164-25fc3b16cac7)
+
+![26](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/c478627c-98c6-42a7-833c-c923fffd118e)
+
+
+# Step 13:
+
+
+**Route 53:**
+
+-**Follow the below steps in route 53**
+
+- Health Checks create, name it(NV-HC), take domain name.
+- we need to North Verginia Load Balancer. DNS Name.
+- Just copy it from L.B and paste it here
+- path(index.html).
+- Goto advance-Fast-Failure(1)-Next.
+- Create alarm- Existing topic select & next.
+- Now, goto hosted zones-create record.
+- Click on Failover-next.
+- Give the name- Define Failover record.
+- Alias to application & Classic load balancer
+- Select region.
+- Select as primary,click on haelth check.
+- Give the unique description & define it & Create record set.
+
+
+# Step - 14:
+
+
+**Cloudwatch**
+
+- Goto Dashboard & create & nameit (AutoScaling Server).
+- Select stacked area - metrics
+- Scroll down goto EC2 - By AutoScaling Group.
+- MYASG - CPU Utilization - Create widget.
+- Save it.
+
+
+# Step - 15:
+
+
+**NACL[Network Access Control Lists]**
+
+- Goto VPC.
+- Click on NACL -Nmae it - Click our VPC -Create.
+- This NACL is associate with two public subnets. click it in subnet associations.
+- Then, you have to open the in & out bounds then only one servers will work.
+- INBOUND RULES
+  1) 100 - SSH(22)
+  2) 200 - HTTP(80)
+  3) 300 - Custom TCP
+- OUTBOUND RULES
+  1) 100 - SSH(22)
+  2) 200 - HTTP(80)
+  3) 300 - Custom TCP
+  4) 400 - HTTPS - ALL(For access the internet in database)
+ 
+
+# Testing all services
+
+**1. Testing the Bastion Server**
+
+- open the session.
+- sudo su
+- Drag .pem file & copy it here.
+- Goto instance - SSH Client & Copy the Private IP - Yes.
+
+
+**2. Testing the webservers**
+
+-We did earlier, same process.
+
+
+**3. IAM Role & S3 buckets Testing**
+
+- Go to same webserver.
+- sudo su -
+- aws s3 ls
+
+
+**4. Mount File**
+
+- same webserver
+- cd /
+- ls
+- sai(our file)
+- cd sai
+- touch sailfile
+- ls
+- mkdir saidir
+- ls
+
+**5. VPC Flow Logs**
+
+- Goto S3 buckets- Inside objects -------.
+- you can download it.
+
+**6. Cloud Watch**
+
+- You can see the CPU Optimization.
+
+**7. Cloud Trail**
+
+- Goto Cloud Trail - you can see everything so far- History.
+- 
+  
+
+
+
+
   
 
 
