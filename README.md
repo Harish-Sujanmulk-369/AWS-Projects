@@ -2,6 +2,10 @@
 # AWS Project || VPC + EC2 Hands On 
 
 To create networking on AWS which includes AWS VPC, Subnets, Internet Gateway, Route Tables, Security Groups along with a server inside the network.
+Below diagarm shows the actual representation of our project.Follow those connections one by one.
+
+![AWS Project](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/0d116c5f-fe47-4bf8-be5a-55cbc3731a6a)
+
 
 **AWS Services**
 
@@ -53,6 +57,27 @@ We have to follow 15 steps following below. Let's start
 ![5](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/46be75d7-35a0-4495-8f93-b55b5c9defe5)
 
 ![6](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/4fca6ebb-8ee9-454b-a22f-2c02651e9a61)
+
+**Internet Gateway(I.G)**
+
+- Defaultly one I.G is there.
+- But we need to craete another one.
+- So,click on create I.G.
+- Give the name whaterver you want then create.
+- After this we need to attach this to existence VPC.
+
+![7](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/78f98fb2-6a18-4e06-a853-0c8653706512)
+![8](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/a779c31d-585e-4c18-98bf-1b3287ecceda)
+
+**Route Tables(R.T)**
+
+- Defaultly one R.T is there.
+- But, instead of default, there is another R.T is also there.Because, we are created one VPC.So,it is connected to it.
+- Even though, we should create another R.T for our own.
+- Give the name to new R.T and select existence  VPC  then click on create R.T .
+- Now, our own R.T is ready.
+  
+
 
 
 
