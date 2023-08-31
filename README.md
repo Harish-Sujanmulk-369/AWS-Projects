@@ -249,13 +249,16 @@ We have to follow 15 steps following below. Let's start
 - SNS add it which we attached earlier when we are creating the launch template.
 - next,Tags(Name-webserver).
 - create AutoScaling.
-- Goto the loadbalancer copy the DNS name & paste it in browser (or) just copy any one of EC2 instance IP address and paste it on browser.It also works.
 
 ![20](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/224dd430-e399-45bb-9609-91c73a072307)
 
 ![21](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/89cbbfff-6c8e-4297-96d5-b4af28f29fba)
 
+- just copy any one of EC2 instance IP address and paste it on browser
+
 ![22](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/362b31d6-1573-4c56-be00-8df35507d138)
+
+- Goto the loadbalancer copy the DNS name & paste it in browser
 
 ![23](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/8223b751-e810-4aad-aefb-705ca7d7646b)
 
