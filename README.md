@@ -1,5 +1,5 @@
 # AWS-Projects
-AWS Project || VPC + EC2 Hands On 
+# AWS Project || VPC + EC2 Hands On 
 
 To create networking on AWS which includes AWS VPC, Subnets, Internet Gateway, Route Tables, Security Groups along with a server inside the network.
 
@@ -11,9 +11,9 @@ Worked on Elastic Compute Cloud (EC2), Elastic Load Balancer (ELB), Auto Scaling
 
 We have to follow 15 steps following below. Let's start
 
-**Step 1 :
+**Step 1 :**
 
-VPC Creation:**
+**VPC Creation:**
 
 - Login to your AWS Acoount.
 
