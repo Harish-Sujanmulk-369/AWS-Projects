@@ -17,7 +17,7 @@ We have to follow 15 steps following below. Let's start
 
 **Step 1 :**
 
-**VPC Creation:**
+**a. VPC Creation:**
 
 - Login to your AWS Acoount.
 
@@ -33,7 +33,7 @@ We have to follow 15 steps following below. Let's start
 
 ![2](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/fe181509-f22e-45e5-9ad0-b5d03b3f4436)
 
-**Subnets Creation:**
+**b. Subnets Creation:**
 
 - In this project we need three subnets.Go to the subnet section and create.
 - Fisrt take the subnets one by one.
@@ -58,7 +58,7 @@ We have to follow 15 steps following below. Let's start
 
 ![6](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/4fca6ebb-8ee9-454b-a22f-2c02651e9a61)
 
-**Internet Gateway(I.G)**
+**c. Internet Gateway(I.G)**
 
 - Defaultly one I.G is there.
 - But we need to craete another one.
@@ -69,7 +69,7 @@ We have to follow 15 steps following below. Let's start
 ![7](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/78f98fb2-6a18-4e06-a853-0c8653706512)
 ![8](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/a779c31d-585e-4c18-98bf-1b3287ecceda)
 
-**Route Tables(R.T)**
+**d. Route Tables(R.T)**
 
 - Defaultly one R.T is there.
 - But, instead of default, there is another R.T is also there.Because, we are created one VPC.So,it is connected to it.
