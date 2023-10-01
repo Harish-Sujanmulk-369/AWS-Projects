@@ -31,7 +31,7 @@ We have to follow 15 steps following below. Let's start
 
 
 
-![2](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/fe181509-f22e-45e5-9ad0-b5d03b3f4436)
+
 
 **b. Subnets Creation:**
 
@@ -50,13 +50,7 @@ We have to follow 15 steps following below. Let's start
 - Goto edit subnet and the "enable auto-assign public ipV4 address".
 - Then click on save button.
 
-![3](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/db24ccde-6fab-4c71-8540-4ec7edeb5b84)
 
-![4](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/f6a7fadd-4d12-48e2-8afd-bb81db84e76e)
-
-![5](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/46be75d7-35a0-4495-8f93-b55b5c9defe5)
-
-![6](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/4fca6ebb-8ee9-454b-a22f-2c02651e9a61)
 
 **c. Internet Gateway(I.G)**
 
@@ -66,8 +60,6 @@ We have to follow 15 steps following below. Let's start
 - Give the name whaterver you want then create.
 - After this we need to attach this to existence VPC.
 
-![7](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/78f98fb2-6a18-4e06-a853-0c8653706512)
-![8](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/a779c31d-585e-4c18-98bf-1b3287ecceda)
 
 **d. Route Tables(R.T)**
 
@@ -77,9 +69,6 @@ We have to follow 15 steps following below. Let's start
 - Give the name to new R.T and select existence  VPC  then click on create R.T .
 - Now, our own R.T is ready.
 
-![9](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/aa6351a0-9368-4163-a524-e448118cc0f6)
-
-![1](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/7ad1c03b-dc82-423d-9a6b-0401ede69186)
 
 - Follow the above diagram.
 - Inside our R.T , goto edit subnet associations.Go through first two public subnets click on them.
@@ -88,9 +77,6 @@ We have to follow 15 steps following below. Let's start
 - Moreover, we should provide internet right,then click on 0.0.0.0/0 for providing the internet.
 - Save changes.
 
-![10](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/687aa72d-7552-47e6-99be-cc0274ddbd55)
-
-![11](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/24105d53-d00c-40e6-89ad-edd6d09e7e76)
 
 **e. NAT- Gateway(NAT.G)**
 
@@ -100,9 +86,7 @@ We have to follow 15 steps following below. Let's start
 - Just go through and change the name as "NatRT".
 - And see the picture and connection of NAT.G .
 
-![12](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/b896bb75-1cb3-410d-ad99-513856b73728)
 
-![2](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/4b800a3d-e797-4c97-89df-9b65514e374b)
 
 - Follow the above diagram.
 - Now,inside the "NatRT". Go to the subnet permission click on third subnet and save.
@@ -120,7 +104,6 @@ We have to follow 15 steps following below. Let's start
 - That's it.
 - Goto E-mail and accept & Enable it.
 
-![13](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/2010b22e-5ba2-4191-8e16-1deabb2b6d2b)
 
 
 # Step - 3:
@@ -136,7 +119,7 @@ We have to follow 15 steps following below. Let's start
   2) Second
 - Process is same.
 
-![14](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/8f46fb39-255b-4f2b-8b05-435b1814c52a)
+
 
 
 # Step - 4:
@@ -148,7 +131,6 @@ We have to follow 15 steps following below. Let's start
 - Give the role name and click on next.
 - Now IAM is ready.
 
-![15](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/56aadadc-65bd-41fc-89fb-e195e56921c5)
 
 
 # Step - 5:
@@ -163,9 +145,6 @@ We have to follow 15 steps following below. Let's start
 - Then only it can be work.
 - That's it.
 
-![16](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/a7a67234-6184-4773-afa0-4c164bdb65d6)
-
-![17](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/5b3bd211-f3d6-4180-8105-31e03af7b096)
 
 
 # Step - 6:
@@ -180,7 +159,6 @@ We have to follow 15 steps following below. Let's start
 - Then click on craete.
 - That's it.
 
-![18](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/1cad6cc8-56a9-495e-acb9-e2965cc32b03)
 
 
 # Step - 7:
@@ -207,7 +185,6 @@ We have to follow 15 steps following below. Let's start
   - Health checks is same(2,5,2,2).
   - As of now we don't have any instances .Review & Create.
  
-![19](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/807cc807-7a15-4b61-b203-dc0487ac0b02)
 
 
 # Step - 9:
@@ -250,17 +227,15 @@ We have to follow 15 steps following below. Let's start
 - next,Tags(Name-webserver).
 - create AutoScaling.
 
-![20](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/224dd430-e399-45bb-9609-91c73a072307)
 
-![21](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/89cbbfff-6c8e-4297-96d5-b4af28f29fba)
 
 - just copy any one of EC2 instance IP address and paste it on browser
 
-![22](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/362b31d6-1573-4c56-be00-8df35507d138)
+
 
 - Goto the loadbalancer copy the DNS name & paste it in browser
 
-![23](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/8223b751-e810-4aad-aefb-705ca7d7646b)
+
 
 
 
@@ -284,7 +259,7 @@ But,further we can maove on to the bastion servers.And that is connected to thir
 - you can create another bastion server same as above.
 - But, we need to select existing key pair,VPC,S.G and that too second bastion server.
 
-![24](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/ddfb6aa0-4468-4394-b930-a0c7d7847667)
+
 
 
 # Step 12:
@@ -307,9 +282,6 @@ But,further we can maove on to the bastion servers.And that is connected to thir
   2) Second Public Subnet(IP ADDRESS(10.0.2.0/24))
 
 
-![25](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/68a3b45a-9bfd-4edb-b164-25fc3b16cac7)
-
-![26](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/c478627c-98c6-42a7-833c-c923fffd118e)
 
 
 # Step 13:
