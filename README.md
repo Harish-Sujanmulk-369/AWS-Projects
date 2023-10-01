@@ -29,7 +29,7 @@ We have to follow 15 steps following below. Let's start
 
 - Click on create VPC.
 
-![1](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/99b90778-f0a7-44b5-8003-2aab5c418501)
+
 
 ![2](https://github.com/Harish-Sujanmulk-369/house-price-prediction/assets/100031745/fe181509-f22e-45e5-9ad0-b5d03b3f4436)
 
