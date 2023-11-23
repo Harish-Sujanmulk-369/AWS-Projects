@@ -1,0 +1,49 @@
+ITEM_ID,PRICE,CATEGORY_L1,CATEGORY_L2
+4429430,27000,Cloud,Cloud_a
+1564654,39000,Cloud,Cloud_b
+4852289,38000,Cloud,Cloud_c
+6591984,40000,Cloud,Cloud_d
+8120403,17000,Digital Commerce,Digital Commerce_a
+5151556,42000,Digital Commerce,Digital Commerce_b
+2384162,27000,Digital Commerce,Digital Commerce_c
+7705785,12000,Digital Commerce,Digital Commerce_d
+1066873,34000,Ai & Analytics,Ai & Analytics_a
+2523593,19000,Ai & Analytics,Ai & Analytics_b
+8102686,42000,Ai & Analytics,Ai & Analytics_c
+5958479,35000,Ai & Analytics,Ai & Analytics_d
+5514767,31000,Network Security,Network Security_a
+5296176,16000,Network Security,Network Security_b
+8391177,39000,Network Security,Network Security_c
+5656656,35000,Network Security,Network Security_d
+8134390,14000,Process Consulting,Process Consulting_a
+4037297,28000,Process Consulting,Process Consulting_b
+7372098,31000,Process Consulting,Process Consulting_c
+4580377,29000,Process Consulting,Process Consulting_d
+1784357,43000,Learning & Development,Learning & Development_a
+7944412,42000,Learning & Development,Learning & Development_b
+3306631,13000,Learning & Development,Learning & Development_c
+4556099,19000,Learning & Development,Learning & Development_d
+6145271,32000,CyberRisk Advisory,CyberRisk Advisory_a
+5080493,29000,CyberRisk Advisory,CyberRisk Advisory_b
+2061734,24000,CyberRisk Advisory,CyberRisk Advisory_c
+2301101,45000,CyberRisk Advisory,CyberRisk Advisory_d
+3921147,18000,Talent Resourcing & Management,Talent Resourcing & Management_a
+2002269,24000,Talent Resourcing & Management,Talent Resourcing & Management_b
+6804081,38000,Talent Resourcing & Management,Talent Resourcing & Management_c
+4844935,39000,Talent Resourcing & Management,Talent Resourcing & Management_d
+3099226,13000,Customer Communication Management,Customer Communication Management_a
+5114833,19000,Customer Communication Management,Customer Communication Management_b
+8645618,32000,Customer Communication Management,Customer Communication Management_c
+6117150,40000,Customer Communication Management,Customer Communication Management_d
+8227729,17000,Brand Communication & PR,Brand Communication & PR_a
+5048104,29000,Brand Communication & PR,Brand Communication & PR_b
+2012041,20000,Brand Communication & PR,Brand Communication & PR_c
+9947028,16000,Brand Communication & PR,Brand Communication & PR_d
+6328334,29000,Sentiment Analysis & Opinion Mining,Sentiment Analysis & Opinion Mining_a
+2903058,16000,Sentiment Analysis & Opinion Mining,Sentiment Analysis & Opinion Mining_b
+5758296,42000,Sentiment Analysis & Opinion Mining,Sentiment Analysis & Opinion Mining_c
+5095492,18000,Sentiment Analysis & Opinion Mining,Sentiment Analysis & Opinion Mining_d
+6318123,39000,"Marketing, Sales Consulting & Strategy","Marketing, Sales Consulting & Strategy_a"
+1307091,20000,"Marketing, Sales Consulting & Strategy","Marketing, Sales Consulting & Strategy_b"
+8118336,19000,"Marketing, Sales Consulting & Strategy","Marketing, Sales Consulting & Strategy_c"
+9521489,32000,"Marketing, Sales Consulting & Strategy","Marketing, Sales Consulting & Strategy_d"
